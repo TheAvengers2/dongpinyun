@@ -152,4 +152,8 @@
 		p:defaultEncoding="utf-8">
 		<property name="maxUploadSize" value="50048000" />	
 	</bean>
+	
+	<mvc:interceptors>
+    	<bean class="com.dongpinyun.web.interceptor.DefaultValueInterceptor" autowire="constructor" />
+	</mvc:interceptors>	
 </beans>
